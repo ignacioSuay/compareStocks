@@ -21,3 +21,45 @@
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
 </div>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>name</th>
+      <th>Cost per trade - Regular</th>
+      <th>Cost per trade - frequent</th>
+      <th>Cost per trade - Standard</th>
+      <th>Admin charge</th>
+      <th>Online Access</th>
+      <th>Mobile Access</th>
+      <th>Phone Access</th>
+      <th>Phone Charges</th>
+      <th>Holding funds costs</th>
+      <th>Transfer In Fees</th>
+      <th>Cash withdrawals</th>
+      <th>Transfers to other Providers</th>
+      <th>Additional Charges </th>
+      <th>Min Investment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="broker in data">
+      <td>{{broker.name}}</td>
+      <td>{{broker.regular}}</td>
+      <td>{{broker.frequent}}</td>
+      <td>{{broker.standard}}</td>
+      <td>{{broker.adminCharge}}</td>
+      <td>{{broker.hasOnline}}</td>
+      <td>{{broker.hasMobile}}</td>
+      <td>{{broker.hasPhone}}</td>
+      <td>{{broker.phoneCharges}}</td>
+      <td>{{broker.holdingFunds}}</td>
+      <td>{{broker.transferIn}}</td>
+      <td>{{broker.cash}}</td>
+      <td>{{broker.transfersOut}}</td>
+      <td>{{broker.additionalCharges}}</td>
+      <td>{{broker.MinInvestment}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
